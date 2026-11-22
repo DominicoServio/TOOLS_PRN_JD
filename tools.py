@@ -5,7 +5,7 @@ import re
 st.title("Job Description Converter")
 
 uploaded_file = st.file_uploader(
-    "Upload JD CSV",
+    "Upload File JD",
     type=["csv"]
 )
 
@@ -89,7 +89,7 @@ if uploaded_file:
     )
 
     st.download_button(
-        "Download TXT",
+        "Download File PRN",
         output,
         file_name="uplmstrjobdesc.txt"
     )
